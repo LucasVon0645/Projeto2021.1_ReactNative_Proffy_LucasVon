@@ -1,11 +1,9 @@
 import React from 'react';
-import { View } from 'react-native';
 
-import Landing from './src/pages/Landing/index'
-import {AppLoading} from 'expo';
+import AppLoading from './node_modules/expo-app-loading/build';
 
 import {Poppins_400Regular, Poppins_600SemiBold, useFonts} from '@expo-google-fonts/poppins'
-import AppStack from './src/routes/AppStack.tsx';
+import AppStack from './src/routes/AppStack';
 
 export default function App() {
 
@@ -15,6 +13,7 @@ export default function App() {
   })
 
 if(!fontsLoaded) {
+
   return <AppLoading />
 }
 
@@ -22,8 +21,7 @@ else {
 
 
   return (
-    <View>
+    <>
       <AppStack/>
-    </View>
-  );}
+    </>)}
 }
