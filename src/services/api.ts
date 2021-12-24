@@ -1,7 +1,8 @@
 import axios from 'axios';
 
-const API = axios.create({
-    baseURL: 'https://next.json-generator.com/'
+const api = axios.create({
+    baseURL: "https://proffy.polijrinternal.com",
+    headers: {"Access-Control-Allow-Origin": "*"}
 })
 
-export default API;
+export default api;
