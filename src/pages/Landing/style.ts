@@ -1,3 +1,4 @@
+import { RectButton } from 'react-native-gesture-handler';
 import styled from 'styled-components/native';
 
 export const  ViewLanding  = styled.View`
@@ -12,7 +13,6 @@ export const  ViewLanding  = styled.View`
 
 export const MainImage = styled.Image`
     width: 100%;
-    resize-mode: contain;
 `
 
 export const HeaderLanding = styled.Text`
@@ -29,16 +29,29 @@ export const ViewButtons = styled.View`
 
 `
 
-export const TouchableOpacityLanding: React.FC = styled.TouchableOpacity`
+export const TouchableOpacityLanding1 = styled(RectButton)`
     height: 100px;
-    background-color: ${props => props.color};
+    background-color: #9871f5;
     width: 48%;
     border-radius: 8px;
     padding-left: 24px;
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
-    margin-right: ${(props) => props.estudar ? '4%' : null }
+    margin-right: 4%;
+
+
+`
+
+export const TouchableOpacityLanding2 = styled(RectButton)`
+    height: 100px;
+    background-color: #9871f5;
+    width: 48%;
+    border-radius: 8px;
+    padding-left: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
 
 
 `
